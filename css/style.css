@@ -82,21 +82,12 @@ hr {
 	line-height: 1.3;	
 }
 
-/**
- * Loading Animation
- */
-
-.loading[data-loading] {
-	position: fixed;
-	bottom: 8px; 
-    left: 8px;
-}
 
 /**
  * Editor styles
  */
 
-[data-predefined-style="true"] bodycopy {
+bodycopy {
 	font-size: 1.4rem;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.85);
@@ -105,7 +96,7 @@ hr {
 	line-height: 1.3;
 }
 
-[data-predefined-style="true"] bodycopy a {
+bodycopy a {
 	color: rgb(0, 0, 0);
 	padding-bottom: 0.1em;
 	border-bottom: 0.0em solid rgba(127, 127, 127, 0.2);
@@ -113,7 +104,7 @@ hr {
     text-decoration: none;
 }
 
-[data-predefined-style="true"] bodycopy a:hover {
+bodycopy a:hover {
 
 }
 
@@ -125,7 +116,7 @@ bodycopy a.icon-link:hover {
 	padding-bottom: 0;
 }
 
-[data-predefined-style="true"] h1 {
+h1 {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif Bold", Icons /*!System*/;
 	font-style: normal;
 	font-weight: 700;
@@ -136,11 +127,11 @@ bodycopy a.icon-link:hover {
 	color: rgba(0, 0, 0, 0.85);
 	}
 
-[data-predefined-style="true"] h1 a {
+h1 a {
 	color: rgba(0, 0, 0, 0.85);
 }
 
-[data-predefined-style="true"] h2 {
+h2 {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
 	font-style: normal;
 	font-weight: 400;
@@ -151,11 +142,11 @@ bodycopy a.icon-link:hover {
 	line-height: 1.2;
 	}
 
-[data-predefined-style="true"] h2 a {
+h2 a {
 	color: rgba(0, 0, 0, 0.85);
 }
 
-[data-predefined-style="true"] small {
+small {
 	display: inline-block;
 	font-size: 1.3rem;
 	line-height: 1.3;
@@ -165,406 +156,6 @@ bodycopy a.icon-link:hover {
 	color: rgba(0, 0, 0, 0.35);
 }
 
-[data-predefined-style="true"] small a {
+small a {
 	color: rgba(0, 0, 0, 1);
 }
-
-/**
- * Breakpoints
- */
-
-
-[data-css-preset] .page {
-    background-color: initial /*!page_bgcolor*/;
-}
-
-.mobile .page,
-[data-css-preset].mobile .page {
-	position: relative;
-	min-height: 10px;
-	max-width: 85%;
-	width: 100%;
-    margin: 30px;
-	background-color: transparent /*!page_bgcolor*/;
-}
-
-[data-css-preset] .container {
-	margin-left: auto /*!content_center*/;
-	margin-right: auto /*!content_center*/;
-	text-align: center /*!text_center*/;
-}
-
-[data-css-preset] body {
-	background-color: rgb(255, 255, 255)/*!body_bgcolor*/;
-}
-
-[data-css-preset] .container_width {
-	width: 91%/*!content_center*/;
-}
-
-[data-css-preset] .content_padding {
-	padding-top: 0.7rem/*!main_margin*/;
-	padding-bottom: 0.7rem/*!main_margin*/;
-	padding-left: 0.7rem/*!main_margin*/;
-	padding-right: 0.7rem/*!main_margin*/;
-}
-
-
-[data-css-preset] text-limit {
-	display: inline-block /*!text_width*/;
-	max-width: 66rem/*!text_width*/;
-}
-
-/**
- * Thumbnails
- */
-
-div[thumbnails] {
-	justify-content: flex-start;
-}
-
-[data-css-preset] .thumbnails {
-   	background-color: rgba(0, 0, 0, 0)/*!thumbnails_bgcolor*/;   
-}
-
-[data-css-preset] .thumbnails_width {
-    width: 54%/*!thumbnails_width*/;
-}
-
-[data-css-preset] [thumbnails-pad] {
-    padding: 0.9rem/*!thumbnails_padding*/;
-}
-
-[data-css-preset] [thumbnails-gutter] {
-    margin: -1.8rem/*!thumbnails_padding*/;
-   
-}
-
-[data-css-preset] [responsive-layout] [thumbnails-pad] {
-    padding: 0.5rem/*!responsive_thumbnails_padding*/; 
-}
-
-[data-css-preset] [responsive-layout] [thumbnails-gutter] {
-    margin: 0.50rem/*!responsive_thumbnails_padding*/; 
-}
-
-.thumbnails .thumb_image {
-    display: none;
-}
-
-.thumbnails .title {
-    margin-top: 1.2rem;
-   text-align:center;
-    margin-bottom: -0.5rem;
-    font-size: 1.2rem;
-	font-weight: 600;
-	color: rgba(0, 0, 0, 0.85);
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	font-style: normal;
-	line-height: 2.7;
-    border-style: solid;
-    border-width: 1.5px;
-    box-shadow: 5px 5px;
-}
-
-.thumbnails .tags {
-    margin-top: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.6rem;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.35);
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	font-style: normal;
-	line-height: 1.2;
-}
-
-.thumbnails .tags a {
-	border-bottom: 0;
-    color: rgba(0, 0, 0, 0.35);
-    text-decoration: none;
-}
-
-.thumbnails .has_title .tags {
-	margin-top: 0rem;
-}
-
-/**
- * Site Menu
- */
-
-[data-css-preset] #site_menu_button {
-    color: rgba(0, 0, 0, 0.75);
-    line-height: 1;
-    font-size: 28px /*!site_menu_button*/;
-    padding: 6px;
-    line-height: 1;
-    background: rgba(33, 32, 46, 0);
-    position: fixed;
-    top: 3rem /*!site_menu_button*/;
-	right: 3rem /*!site_menu_button*/;
-}
-
-body.mobile #site_menu_button {
-	margin: -2px;
-    font-size: 30px;
-}
-
-#site_menu_button.custom_icon {
-	width: 40px;
-    height: auto;
-}
-
-#site_menu_button.active {
-	display: none;
-}
-
-/**
- * Site Menu
- */
-
-#site_menu {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	background: rgba(0, 0, 0,0.9);
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 600;
-	padding: 20px 30px 90px 30px;
-	max-width: 400px;
-	min-width: 300px;
-	text-align: center;
-	display: flex;
-	justify-content: flex-start;
-}
-
-body.mobile #site_menu {
-	width: 100%;
-}
-
-#site_menu .page-link a {
-	color: rgba(255, 255, 255, 1);
-}
-
-#site_menu .set-link > a {
-	color: rgba(255, 255, 255, 0.75);
-	font-weight: bold;
-}
-
-#site_menu a:active {
-	opacity: .7;
-}
-
-#site_menu a.active {
-	opacity: .4;
-}
-
-#site_menu .close {
-	display: none;
-	color: rgba(255, 255, 255, 0.4);
-	line-height: .85em;
-	font-size: 45px;
-}
-
-body.mobile #site_menu .close {
-	display: block;
-	font-size: 50px;
-	line-height: 1em;
-}
-
-#site_menu .break {
-	height: 28px;
-}
-
-#site_menu .indent {
-	margin-left: 28px;
-}
-
-/*
- * Shop Button
- */
-
-[data-css-preset] #shop_button {
-	color: rgba(0, 0, 0, 0.85);
-    background: transparent;
-	font-size: 32px;
-    font-style: normal;
-	font-weight: 400;
-    line-height: 1;
-    position: fixed;
-	padding: 6px;
-	top: 2rem /*!shop_button*/;
-	right: 2rem /*!shop_button*/;
-}
-
-#shop_button.text {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	font-size: 2rem;
-    padding: 0;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.85);
-}
-
-#shop_button.custom_icon {
-	width: 40px;
-    height: auto;
-}
-
-body.mobile #shop_button:not(.text) {
-	margin: -6px;
-    font-size: 36px;
-}
-
-/*
- * Shop Product Widget
- */
-
-.shop_product {
-    width: 100%;
-	max-width: 22rem;
-    position: relative;
-    display: block;
-}
-
-.shop_product .price {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	font-size: 2rem;
-	line-height: 1;
-	color: rgba(0, 0, 0, 0.85);
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.shop_product .dropdown {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-    font-size: 1.4rem;
-    display: inline-block;
-	width: 100%;
-    border: 1px solid rgba(0,0,0,.2);
-    background:  white url(https://static.cargo.site/assets/images/select-arrows.svg) no-repeat right;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    padding: .7rem 1rem;
-}
-
-.shop_product .button {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
-	font-size: 1.4rem;
-    background: rgba(0, 0, 0, 0.7);
-    color: rgba(255,255,255,1);
-    flex: 0 0 50%;
-    text-align: left;
-    display: inline-block;
-	line-height: 1;
-    padding: .8rem 1rem .9rem;
-}
-
-/*
- * Image Zoom
- */
-
-.content img.image-zoom:active {
-  opacity: .7;
-}
-
-.image-zoom-background {
-	background: rgba(255, 255, 255, 0.95);
-}
-
-
-/**
- * Image Zoom Navigation Arrows 
- */
-
-.image-zoom-navigation .left-arrow,
-.image-zoom-navigation .right-arrow {
-    /* Change height/width together to scale */
-    height: 36px;
-    width: 36px;
-}
-
-.image-zoom-navigation .left-arrow .inner-color,
-.image-zoom-navigation .right-arrow .inner-color {
-    fill: #fff;
-}
-
-.image-zoom-navigation .left-arrow .outer-color,
-.image-zoom-navigation .right-arrow .outer-color {
-    fill: #000;
-    opacity: 0.2;
-}
-
-.image-zoom-navigation .close-button {  
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* Change height/width together to scale */
-    width: 36px;
-    height: 36px;
-}
-
-.image-zoom-navigation .close-button .inner-color {
-    fill: #fff;
-}
-
-.image-zoom-navigation .close-button .outer-color {
-    fill: #000;
-    opacity: 0.2;
-}
-
-/** 
- * Image Gallery Navigation Arrows 
- */
- 
-.image-gallery-navigation .left-arrow,
-.image-gallery-navigation .right-arrow {
-    /* Change height/width together to scale */
-    height: 56px;
-    width: 56px;
-}
-
-.image-gallery-navigation .left-arrow .inner-color,
-.image-gallery-navigation .right-arrow .inner-color {
-    fill: #fff;
-}
-
-.image-gallery-navigation .left-arrow .outer-color,
-.image-gallery-navigation .right-arrow .outer-color {
-    fill: #000;
-    opacity: 0.2;
-}
-
-/**
- * Wallpaper Backdrop Navigation Arrows 
- */
-
-.wallpaper-navigation .left-arrow,
-.wallpaper-navigation .right-arrow {
-   /* Change height/width together to scale */
-   width: 56px;
-   height: 56px;
-}
-
-.wallpaper-navigation .left-arrow .inner-color,
-.wallpaper-navigation .right-arrow .inner-color {
-   fill: #fff;
-}
-
-.wallpaper-navigation .left-arrow .outer-color,
-.wallpaper-navigation .right-arrow .outer-color {
-    fill: #000;
-    opacity: 0.2;
-}
-
-
-/**
- * Feed
- */
-
-.feed .content_container .page {
-    border-top: 0px dashed rgba(0, 0, 0, 0.2);
-}
-
-.feed .content_container .page_container:first-child .page {
-	border-top: 0;
-}
-
